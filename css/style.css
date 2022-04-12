@@ -1,0 +1,314 @@
+h1 {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #939393;
+    font-weight: bolder;
+    color: #404040;
+}
+
+ul {
+    list-style: none;
+}
+
+h2 {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.secciones {
+    background-color: #939393;
+    list-style-type: none;
+    display: flex;         
+    align-items: center;
+    font-size: 20px;
+}
+
+a {
+    color: black;
+    
+}
+
+li.listaSeccion {
+    display: flex;
+    display: inline;
+    justify-content: flex-end;
+    margin-right: 100px;
+    margin-left: 100px;
+    
+}
+
+img {
+    width: 100%;
+}
+
+
+.tituloConocenos {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    align-self: baseline;
+    justify-content: center;
+    
+}
+
+
+/**.parrafoConocenos {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+} */
+
+.videoIntroduccion {
+    padding: 100px;
+    margin: -100px;
+}
+
+.conocenos {
+    display: flex;
+    display: grid;
+    grid-template-areas:
+    nav div parrafoConocenos
+    nav div tituloConocenos
+    nav aside videoIntroduccion;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 250px ;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: -70px;
+    padding: 150px;
+}
+
+img {
+    max-width: 100%;
+}
+
+#misionVision {
+    display: grid;
+    text-align: center;
+    grid-template-areas:
+    nav div mision
+    nav div vision;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 1fr 1px;
+    padding: 50px;
+}
+
+/*.misionVision {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    padding: 50px;
+    
+}  */
+
+.mision {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    grid-area: inherit;
+} 
+
+.vision {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    display: grid;
+    justify-content: center;
+    grid-area: inherit;
+}  
+
+.valores {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#servicios {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    
+}
+
+.textoServicio {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.textoCalculadora {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+.calculadora {
+    text-align: center;
+    padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+#servicios {
+    display: flex;
+    flex-direction: column;
+}
+
+.auditorias {
+    display: flex;
+    justify-content: center;    
+    background-color: #404040;
+    color:white;
+}
+
+/*.parrafoAuditorias {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+} */
+
+/*.peritajeContable {
+    display: flex;
+    justify-content: center;
+    background-color: #404040;
+    color:white; */
+
+
+/*.parrafoPeritaje {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+} */
+
+/*.asesoriaFiscal {
+    display: flex;
+    justify-content: center;
+    background-color: #404040;
+    color:white;
+}*/
+
+/*.parrafoAsesoria {
+
+} */
+
+/*.servicioNomina {
+    display: flex;
+    justify-content: center;
+    background-color: #404040;
+    color:white;
+} */
+
+/*.parrafoNomina {
+
+} */
+
+/*.serviciosContables {
+    display: flex;
+    justify-content: center;
+    background-color: #404040;
+    color: white; 
+} */
+
+/*.parrafoContable{
+} */
+
+#contenidoContabilidad {
+    display: grid;
+    grid-template-areas: 
+    "nav article nav"
+    "nav div parrafo"
+    "nav div titulo";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 150px;
+}
+
+#servicioNomina {
+    display: grid;
+    grid-template-areas: 
+    "nav article nav"
+    "nav div titulo"
+    "nav div parrafo";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 110px;
+}
+
+#servicioAuditorias {
+    display: grid;
+    grid-template-areas: 
+    "nav article nav"
+    "nav div titulo"
+    "nav div parrafo";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 110px;
+}
+
+#peritajeContable {
+    display: grid;
+    grid-template-areas: 
+    "nav article nav"
+    "nav div titulo"
+    "nav div parrafo";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 110px;
+}
+
+#asesoriaFiscal {
+    display: grid;
+    grid-template-areas: 
+    "nav article nav"
+    "nav div titulo"
+    "nav div parrafo";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 110px;
+}
+
+#blog {
+    display: grid;
+    grid-template-areas: 
+    "nav titulo nav"
+    "nav img nav"
+    "nav parrafo nav";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: -150px ;
+}
+
+@media screen and (min-width: 768px) {
+body{
+
+    background-color: white;
+    grid-template-columns:1fr 2fr;
+}
+}
+
+/*#grilla {
+    display: grid;
+    grid-template-areas: 
+    "nav header header"
+    "nav productos publicidad"
+    "nav servicios publicidad"
+    "nav footer footer";
+    grid-template-columns: 20% auto 15%;
+    grid-template-rows: 100px 1fr 1fr 75px;
+}
+
+.border{
+    border: 1px solid black;
+
+}
+
+header {
+    grid-area: header;
+}
+
+footer {
+    grid-area: footer;
+}
+section#productos {
+    grid-area: productos;
+}
+
+section#servicios {
+    grid-area: servicios;
+}
+nav {
+    grid-area: nav;
+}
+aside {
+    grid-area: publicidad;
+} */

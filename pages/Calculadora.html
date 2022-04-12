@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/7.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>ISR</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="secciones">
+                <li class="listaSeccion">
+                    <a href="../index.html"><h1>Despacho contable</h1></a>
+                </li>
+                <li class="listaSeccion">
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="Servicios.html">Servicios</a>
+                </li>
+                <li class="listaSeccion">
+                    <a href="Blog.html">Blog</a>
+                </li>
+                <li class="listaSeccion">
+                    <a href="Buscar.html">Buscar</a>
+                    <label for="buscar"></label>
+                    <input type="text" class="buscar">
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="calculadora">
+    <div class="textoCalculadora">
+    <h2>Calculadora de ISR</h2>
+        <p>También conocido como Impuesto Sobre la Renta (ISR), es un impuesto directo que se aplica a las ganancias obtenidas durante el ejercicio. En otras palabras, se mantiene a la diferencia entre los ingresos y las deducciones autorizadas. Sin importar la naturaleza, denominación u origen, se grava la utilidad del bien o actividad que incremente el patrimonio del contribuyente. Debido a que tanto personas físicas como personas morales deben pagarlo, representa un importante instrumento de Finanzas Públicas en el País. Su recaudación permite que el gobierno disponga de recursos para que sean aplicados a gastos de utilidad general.</p>
+    </div>
+        <div class="calculadora"> 
+        <div>
+            <label for="año">Año</label>
+            <select class="form-select" id="año" type="number" >
+                <option value="0">---Seleccionar---</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+            </select>
+        </div>
+        <div>
+            <label for="periodo">Periodo</label>
+            <select class="form-select" id="periodo" type="text">
+                <option value="0">---Seleccionar---</option>
+                <option value="d">Diario</option>
+                <option value="s">Semanal</option>
+                <option value="q"> Quincenal</option>
+                <option value="m">Mensual</option>
+                <option value="a">Anual</option>
+            </select>
+        </div>
+        <div>
+            <label for="ingreso">Ingreso bruto</label>
+            <input class="input-group-text" id="ingreso" type="number">
+        </div>
+        <div>
+            <button class="btn" id="btnisr" ; onclick="datos()">Calcular</button>
+        </div>
+        <hr>
+    <div>
+        <label id="isrlbl" for="ISR"> ISR</label>
+        <input class="input-group-text" id="ISR" disabled="">
+        <label for="sueldo_neto"> Sueldo Neto</label>
+        <input class="input-group-text" id="neto" disabled="">
+    </div>
+</div>
+</section>
+</body>
+</html>
