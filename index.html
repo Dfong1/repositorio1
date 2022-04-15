@@ -121,37 +121,16 @@
     </div>
 </section>
 <footer>
-    <h2>Contacto</h2>
-    <form id="contacto">
-        <legend>Contáctanos para más información</legend>
-    
-    <div>
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" required>
+    <form class="form"  action="https://formspree.io/f/xvolwbbd"
+    method="POST">
+    <div class="form__container">
+        <h2 class="form__title">Contactame</h2>
+        <input type="text" class="form__input" placeholder="Nombre" name="nombre">
+        <input type="email" class="form__input" placeholder="E-mail:" name="email">
+        <textarea class="form__input form__input--message" placeholder="Mensaje" name="message"></textarea>
+        <input type="submit" value="Enviar" class="form__cta">
     </div>
-    <br>
-    <div>
-        <label for="correo">Correo:</label>
-        <input type="mail" id="correo" required>
-    </div>
-    <br>
-    <div>
-        <label for="asunto">Asunto:</label>
-        <input type="text" id="asunto" required>
-    </div>
-    <br>
-    <div>
-        <label for="mensaje">Mensaje:</label>
-        <input type="text" id="mensaje">
-    </div>
-    <br>
-    <div>
-        <label for="enviar"></label>
-        
-        <input type="submit" name="Enviar" id="enviar">
-    </div>
-</form>
-<div>
+    </form>
     <p>
         Direccion:
     </p>
@@ -161,7 +140,6 @@
     <p>
         Correo:
     </p>
-</div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
