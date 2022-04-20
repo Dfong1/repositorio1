@@ -54,6 +54,7 @@ body {
     cursor: pointer;
 }
 
+
 h1 {
     background-color: #939393;
     font-weight: bolder;
@@ -79,13 +80,12 @@ ul {
 }
 
 .secciones li:hover {
-    background-color: cyan;
+    background-color: blacj;
     height: 50px
 }
 
 a {
     color: black;
-    
 }
 
 li.listaSeccion {
@@ -94,7 +94,10 @@ li.listaSeccion {
     justify-content: flex-end;
     margin-right: 100px;
     margin-left: 100px;
-    
+}
+
+#Conocenos:onclick{
+    transition: height 2s;
 }
 
 img {
@@ -144,7 +147,6 @@ img {
 
 #misionVision {
     display: grid;
-    text-align: center;
     grid-template-areas:
     nav div mision
     nav div vision;
@@ -167,13 +169,34 @@ img {
 
 .vision {
     display: flex;
-    display: grid;
     justify-content: center;
     grid-area: inherit;
 }  
 
+
 .valores {
-    text-align: center;
+    display: grid;
+    grid-template-areas:
+    nav div honestidad
+    nav div respeto
+    nav div confianza
+    nav div responsabilidad
+    nav div lealtad
+    nav div superacion;
+    grid-template-rows: repeat(6 100px);
+    grid-template-columns: repeat(6 1px);
+    padding: 50px;
+}
+
+
+#misionVision {
+    display: grid;
+    grid-template-areas:
+    nav div mision
+    nav div vision;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 1fr 1px;
+    padding: 50px;
 }
 
 #servicios {
@@ -189,6 +212,12 @@ img {
     display: inline;
     display: grid;
     grid-template-rows: repeat(5, 100px);
+}
+
+
+.divServicios:hover {
+    background-color: #ABB5C2;
+    
 }
 
 .textoCalculadora {
@@ -330,19 +359,13 @@ img {
     grid-template-rows: -150px ;
 }
 
-@media screen and (min-width: 768px) {
-body{
-
-    background-color: white;
-    grid-template-columns:1fr 2fr;
-}
-}
-
-@media (max-width:450px){
-    .form{
-        padding: 3.5em 1em;
+@media (max-width: 1040px) and (min-width: 0px){
+    body{   
+        background-color: #F0FDFF;
     }
 }
+
+
 
 /*#grilla {
     display: grid;
