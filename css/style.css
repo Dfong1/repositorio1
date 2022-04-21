@@ -363,8 +363,17 @@ img {
     body{   
         background-color: #F0FDFF;
     }
-}
+    img{
+        max-width: 98%;
+    }
 
+    .conocenos {
+        padding: 125px;
+    }
+    #misionVision {
+        padding: 100px;
+    }
+}
 
 
 /*#grilla {
