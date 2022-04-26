@@ -163,7 +163,6 @@ img {
 
 .mision {
     display: flex;
-    justify-content: center;
     grid-area: inherit;
 } 
 
