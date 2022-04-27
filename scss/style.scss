@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form {
+    background-color:#fff;
+    width: 90%;
+    border-radius: 1em;
+    padding: 3.5em 1.5em;
+    margin: auto;
+}
+
+.form__container {
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+}
+
+.form__title {
+    text-align: center;
+    font-size: 1.9rem;
+    margin-bottom: .4em;
+}
+
+.form__input {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: .8em 1em;
+    outline: none;
+    border: none;
+    border: 1px solid black;
+    border-radius: 0.2em;
+}
+
+.form__input--message {
+    resize: none;
+    padding: 1.8em 1em;
+    margin-bottom: 0.5em;
+}
+
+.form__cta {
+    font-family: inherit;
+    background-color: #089FE0;
+    color: #fff;
+    border: none;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: 0.7em 0;
+    border-radius: .2em;
+    cursor: pointer;
+}
+
+
+h1 {
+    background-color: #939393;
+    font-weight: bolder;
+    color: #404040;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.secciones {
+    background-color: #939393;
+    list-style-type: none;
+    display: flex;         
+    align-items: center;
+    font-size: 20px;
+}
+
+.secciones li {
+    height: 100px;
+    transition: height 2s;
+}
+
+.secciones li:hover {
+    background-color: blacj;
+    height: 50px
+}
+
+a {
+    color: black;
+}
+
+li.listaSeccion {
+    display: flex;
+    display: inline;
+    justify-content: flex-end;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+#Conocenos:onclick{
+    transition: height 2s;
+}
+
+img {
+    width: 100%;
+}
+
+iframe {
+    width: 100%;
+}
+
+.tituloConocenos {
+    display: flex;
+    align-self: baseline;
+    justify-content: center;
+    
+}
+
+
+/**.parrafoConocenos {
+    text-align: center;
+    display: flex;
+    align-items: center;
+} */
+
+.videoIntroduccion {
+    padding: 100px;
+    margin: -100px;
+}
+
+.conocenos {
+    display: flex;
+    display: grid;
+    grid-template-areas:
+    nav div parrafoConocenos
+    nav div tituloConocenos
+    nav aside videoIntroduccion;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 250px ;
+    justify-content: center;
+    margin: -70px;
+    padding: 150px;
+}
+
+img {
+    max-width: 100%;
+}
+
+#misionVision {
+    display: grid;
+    grid-template-areas:
+    nav div mision
+    nav div vision;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 1fr 1px;
+    padding: 50px;
+}
+
+/*.misionVision {
+    display: flex;
+    padding: 50px;
+    
+}  */
+
+.mision {
+    display: flex;
+    grid-area: inherit;
+} 
+
+.vision {
+    display: flex;
+    justify-content: center;
+    grid-area: inherit;
+}  
+
+
+.valores {
+    display: grid;
+    grid-template-areas:
+    nav div honestidad
+    nav div respeto
+    nav div confianza
+    nav div responsabilidad
+    nav div lealtad
+    nav div superacion;
+    grid-template-rows: repeat(6 100px);
+    grid-template-columns: repeat(6 1px);
+    padding: 50px;
+}
+
+
+#misionVision {
+    display: grid;
+    grid-template-areas:
+    nav div mision
+    nav div vision;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 1fr 1px;
+    padding: 50px;
+}
+
+#servicios {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.servicios {
+    display: flex;
+    justify-items: center;
+    display: inline;
+    display: grid;
+    grid-template-rows: repeat(5, 100px);
+}
+
+
+.divServicios:hover {
+    background-color: #ABB5C2;
+    
+}
+
+.textoCalculadora {
+    font-size: large;
+}
+
+.calculadora {
+    text-align: center;
+    padding: 50px;
+    font-size: large;
+}
+
+.labels {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#servicios {
+    display: flex;
+    flex-direction: column;
+}
+
+.auditorias {
+    display: flex;
+    justify-content: center;    
+    background-color: #404040;
+    color:white;
+}
+
+/*.parrafoAuditorias {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+} */
+
+/*.peritajeContable {
+    display: flex;
+    justify-content: center;
+    background-color: #404040;
+    color:white; */
+
+
+/*.parrafoPeritaje {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+} */
+
+/*.asesoriaFiscal {
+    display: flex;
+    justify-content: center;
+    background-color: #404040;
+    color:white;
+}*/
+
+/*.parrafoAsesoria {
+} */
+
+/*.servicioNomina {
+    display: flex;
+    justify-content: center;
+    background-color: #404040;
+    color:white;
+} */
+
+/*.parrafoNomina {
+} */
+
+/*.serviciosContables {
+    display: flex;
+    justify-content: center;
+    background-color: #404040;
+    color: white; 
+} */
+
+/*.parrafoContable{
+} */
+
+#contenidoContabilidad {
+    display: grid;
+    grid-template-areas: 
+    "nav article nav"
+    "nav div parrafo"
+    "nav div titulo";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 150px;
+}
+
+#servicioNomina {
+    display: grid;
+    grid-template-areas: 
+    "nav article nav"
+    "nav div titulo"
+    "nav div parrafo";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 110px;
+}
+
+#servicioAuditorias {
+    display: grid;
+    grid-template-areas: 
+    "nav article nav"
+    "nav div titulo"
+    "nav div parrafo";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 110px;
+}
+
+#peritajeContable {
+    display: grid;
+    grid-template-areas: 
+    "nav article nav"
+    "nav div titulo"
+    "nav div parrafo";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 110px;
+}
+
+#asesoriaFiscal {
+    display: grid;
+    grid-template-areas: 
+    "nav article nav"
+    "nav div titulo"
+    "nav div parrafo";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 110px;
+}
+
+#blog {
+    display: grid;
+    grid-template-areas: 
+    "nav titulo nav"
+    "nav img nav"
+    "nav parrafo nav";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: -150px ;
+}
+
+@media (max-width: 1040px) and (min-width: 0px){
+    body{   
+        background-color: #F0FDFF;
+    }
+    img{
+        max-width: 98%;
+    }
+
+    .conocenos {
+        padding: 125px;
+    }
+    #misionVision {
+        padding: 100px;
+    }
+}
+
+
+/*#grilla {
+    display: grid;
+    grid-template-areas: 
+    "nav header header"
+    "nav productos publicidad"
+    "nav servicios publicidad"
+    "nav footer footer";
+    grid-template-columns: 20% auto 15%;
+    grid-template-rows: 100px 1fr 1fr 75px;
+}
+.border{
+    border: 1px solid black;
+}
+header {
+    grid-area: header;
+}
+footer {
+    grid-area: footer;
+}
+section#productos {
+    grid-area: productos;
+}
+section#servicios {
+    grid-area: servicios;
+}
+nav {
+    grid-area: nav;
+}
+aside {
+    grid-area: publicidad;
+} */
