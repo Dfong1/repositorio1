@@ -75,11 +75,13 @@ ul {
 }
 
 .secciones li {
+    @extend .secciones;
     height: 100px;
     transition: height 2s;
 }
 
 .secciones li:hover {
+    @extend .seciones;
     background-color: blacj;
     height: 50px
 }
@@ -98,10 +100,6 @@ li.listaSeccion {
 
 #Conocenos:onclick{
     transition: height 2s;
-}
-
-img {
-    width: 100%;
 }
 
 iframe {
@@ -203,14 +201,16 @@ img {
     flex-direction: column;
 }
 
-
-
-.servicios {
+@mixin flex-center-grid-rows{
     display: flex;
     justify-items: center;
     display: inline;
     display: grid;
     grid-template-rows: repeat(5, 100px);
+}
+
+.servicios {
+    @include flex-center-grid-rows;
 }
 
 
@@ -346,7 +346,7 @@ img {
     grid-template-rows: 110px;
 }
 
-#blog {
+@mixin grid-template-columns-rows{
     display: grid;
     grid-template-areas: 
     "nav titulo nav"
@@ -354,6 +354,10 @@ img {
     "nav parrafo nav";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: -150px ;
+}
+
+#blog {
+    @include gid-template-columns-rows;
 }
 
 @media (max-width: 1040px) and (min-width: 0px){
@@ -404,3 +408,4 @@ nav {
 aside {
     grid-area: publicidad;
 } */
+
