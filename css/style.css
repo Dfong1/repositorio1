@@ -105,8 +105,8 @@ iframe {
   display: flex;
   display: grid;
   grid-template-areas: nav div parrafoConocenos
- nav div tituloConocenos
- nav aside videoIntroduccion;
+  nav div tituloConocenos
+  nav aside videoIntroduccion;
   grid-template-columns: 50% 50%;
   grid-template-rows: 250px;
   justify-content: center;
@@ -119,7 +119,7 @@ img {
 #misionVision {
   display: grid;
   grid-template-areas: nav div mision
- nav div vision;
+  nav div vision;
   grid-template-rows: 100px 100px 100px;
   grid-template-columns: 1fr 1px;
   padding: 50px; }
@@ -141,19 +141,20 @@ img {
 .valores {
   display: grid;
   grid-template-areas: nav div honestidad
- nav div respeto
- nav div confianza
- nav div responsabilidad
- nav div lealtad
- nav div superacion;
+  nav div respeto
+  nav div confianza
+  nav div responsabilidad
+  nav div lealtad
+  nav div superacion;
   grid-template-rows: repeat(6 100px);
   grid-template-columns: repeat(6 1px);
   padding: 50px; }
 
 #misionVision {
   display: grid;
-  grid-template-areas: nav div mision
- nav div vision;
+  grid-template-areas: 
+  "nav div mision"
+  "nav div vision";
   grid-template-rows: 100px 100px 100px;
   grid-template-columns: 1fr 1px;
   padding: 50px; }
@@ -167,18 +168,21 @@ img {
   justify-items: center;
   display: inline;
   display: grid;
-  grid-template-rows: repeat(5, 100px); }
+  grid-template-rows: repeat(5, 100px); 
+}
 
 .divServicios:hover {
-  background-color: #ABB5C2; }
+  background-color: #ABB5C2; 
+}
 
 .textoCalculadora {
   font-size: large; }
 
 .calculadora {
+  display: grid;
   text-align: center;
   padding: 50px;
-  font-size: large; }
+  }
 
 .labels {
   display: flex;
@@ -236,38 +240,39 @@ img {
 #contenidoContabilidad {
   display: grid;
   grid-template-areas: "nav article nav"
- "nav div parrafo"
- "nav div titulo";
+  "nav div parrafo"
+  "nav div titulo";
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 150px; }
 
 #servicioNomina {
   display: grid;
   grid-template-areas: "nav article nav"
- "nav div titulo"
- "nav div parrafo";
+  "nav div titulo"
+  "nav div parrafo";
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 110px; }
 
 #servicioAuditorias {
   display: grid;
   grid-template-areas: "nav article nav"
- "nav div titulo"
- "nav div parrafo";
+  "nav div titulo"
+  "nav div parrafo";
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 110px; }
 
 #peritajeContable {
   display: grid;
   grid-template-areas: "nav article nav"
- "nav div titulo"
- "nav div parrafo";
+  "nav div titulo"
+  "nav div parrafo";
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 110px; }
 
 #asesoriaFiscal {
   display: grid;
-  grid-template-areas: "nav article nav"
+  grid-template-areas: 
+  "nav article nav"
  "nav div titulo"
  "nav div parrafo";
   grid-template-columns: 1fr 2fr;
