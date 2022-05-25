@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Busqueda</title>
+    <script src="../js/jquery.dataTables.min.js"></script>
+    <script src="../js/jquery.js"></script>
 </head>
 <nav class="navbar navbar-light bg-light justify-content-between">
     <a class="navbar-brand" href="../index.html">Despacho Contable</a>
@@ -26,12 +28,69 @@
             </li>
     </form>
     </nav>
-    <h2>Busqueda</h2>
-    <label for="buscar">Buscar</label>
-    <input type="Search" name="search" id="buscar">
-    <p>Se muestran resultados de: <b></b></p>
 
+    <header class="header">
+        <div class="header-top">
+            <div class="navegacion">
+            <h2>Busqueda</h2>
+            <input type="search" placeholder="Buscar . . . " id="inputBusqueda">
+            </div>
+        </div> 
+        <div class="search" id="search">
+            <table class="search-table" id="searchTable">
+                <thead>
+                    <tr>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="">Inicio</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Servicios</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Contacto</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Calculadora</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Servicios de contabilidad</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Servicios de nomina</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Servicios de auditorias</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Servicios de peritaje contable</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </header>
+    <div class="wrap">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas inventore doloremque, sapiente, incidunt neque odit maiores soluta, explicabo tempora facere sit sequi nisi. Magni eaque quidem esse tenetur? Adipisci, temporibus!</p><br>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas inventore doloremque, sapiente, incidunt neque odit maiores soluta, explicabo tempora facere sit sequi nisi. Magni eaque quidem esse tenetur? Adipisci, temporibus!</p><br>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas inventore doloremque, sapiente, incidunt neque odit maiores soluta, explicabo tempora facere sit sequi nisi. Magni eaque quidem esse tenetur? Adipisci, temporibus!</p><br>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas inventore doloremque, sapiente, incidunt neque odit maiores soluta, explicabo tempora facere sit sequi nisi. Magni eaque quidem esse tenetur? Adipisci, temporibus!</p><br>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas inventore doloremque, sapiente, incidunt neque odit maiores soluta, explicabo tempora facere sit sequi nisi. Magni eaque quidem esse tenetur? Adipisci, temporibus!</p><br>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas inventore doloremque, sapiente, incidunt neque odit maiores soluta, explicabo tempora facere sit sequi nisi. Magni eaque quidem esse tenetur? Adipisci, temporibus!</p><br>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas inventore doloremque, sapiente, incidunt neque odit maiores soluta, explicabo tempora facere sit sequi nisi. Magni eaque quidem esse tenetur? Adipisci, temporibus!</p><br>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas inventore doloremque, sapiente, incidunt neque odit maiores soluta, explicabo tempora facere sit sequi nisi. Magni eaque quidem esse tenetur? Adipisci, temporibus!</p><br>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas inventore doloremque, sapiente, incidunt neque odit maiores soluta, explicabo tempora facere sit sequi nisi. Magni eaque quidem esse tenetur? Adipisci, temporibus!</p><br>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas inventore doloremque, sapiente, incidunt neque odit maiores soluta, explicabo tempora facere sit sequi nisi. Magni eaque quidem esse tenetur? Adipisci, temporibus!</p><br>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas inventore doloremque, sapiente, incidunt neque odit maiores soluta, explicabo tempora facere sit sequi nisi. Magni eaque quidem esse tenetur? Adipisci, temporibus!</p><br>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas inventore doloremque, sapiente, incidunt neque odit maiores soluta, explicabo tempora facere sit sequi nisi. Magni eaque quidem esse tenetur? Adipisci, temporibus!</p><br>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas inventore doloremque, sapiente, incidunt neque odit maiores soluta, explicabo tempora facere sit sequi nisi. Magni eaque quidem esse tenetur? Adipisci, temporibus!</p><br>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas inventore doloremque, sapiente, incidunt neque odit maiores soluta, explicabo tempora facere sit sequi nisi. Magni eaque quidem esse tenetur? Adipisci, temporibus!</p><br>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas inventore doloremque, sapiente, incidunt neque odit maiores soluta, explicabo tempora facere sit sequi nisi. Magni eaque quidem esse tenetur? Adipisci, temporibus!</p><br>
+    </div>
 
+    <script src="../js/buscador.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
