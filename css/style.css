@@ -111,7 +111,7 @@ img {
   width: 100%; }
 
 iframe {
-  width: 100%; }
+  width: 90%; }
 
 
 .tituloConocenos {
@@ -119,43 +119,57 @@ iframe {
   align-self: baseline;
   justify-content: center; }
 
-/**.parrafoConocenos {
-    text-align: center;
-    display: flex;
-    align-items: center;
-} */
+.parrafoConocenos {
+  margin: auto;
+  padding: auto;
+} 
 .videoIntroduccion {
-  padding: 100px;
-  margin: -100px; }
+  margin: auto; 
+}
 
 .conocenos {
   display: flex;
   display: grid;
-  grid-template-areas: nav div parrafoConocenos
-  nav div tituloConocenos
-  nav aside videoIntroduccion;
+  grid-template-areas: 
+  nav div parrafoConocenos
+  "nav div tituloConocenos"
+  "nav aside videoIntroduccion";
   grid-template-columns: 50% 50%;
   grid-template-rows: 250px;
   justify-content: center;
-  margin: -70px;
-  padding: 150px; }
+  align-content: center;
+  margin: auto;
+  padding: 50px; }
+
 
 img {
   max-width: 100%; }
 
 #misionVision {
   display: grid;
-  grid-template-areas: nav div mision
-  nav div vision;
+  grid-template-areas:
+  "nav div mision"
+  "nav div vision";
   grid-template-rows: 100px 100px 100px;
   grid-template-columns: 1fr 1px;
+  margin: auto;
   padding: 50px; }
 
-/*.misionVision {
+  .misionVisionUno{
     display: flex;
-    padding: 50px;
-    
-}  */
+    flex-direction: column;
+    padding: auto;
+    margin: auto;
+
+  }
+
+.misionVision {
+    display: flex;
+    padding: auto;
+    justify-content: flex-start;
+    margin: auto;
+  
+} 
 .mision {
   display: flex;
   grid-area: inherit; }
@@ -166,16 +180,19 @@ img {
   grid-area: inherit; }
 
 .valores {
+  display: flex;
   display: grid;
-  grid-template-areas: nav div honestidad
-  nav div respeto
-  nav div confianza
-  nav div responsabilidad
-  nav div lealtad
-  nav div superacion;
+  grid-template-areas: 
+  nav div honestidad
+  "nav div respeto"
+  "nav div confianza"
+  "nav div responsabilidad"
+  "nav div lealtad"
+  "nav div superacion";
   grid-template-rows: repeat(6 100px);
   grid-template-columns: repeat(6 1px);
-  padding: 50px; }
+  margin: auto;
+  padding: auto; }
 
 #misionVision {
   display: grid;
@@ -333,11 +350,91 @@ footer{
   body {
     background-color: #fff; }
   img {
-    max-width: 98%; }
+    max-width: 100%; }
   .conocenos {
-    padding: 125px; }
+
+    margin: auto;
+  }
   #misionVision {
-    padding: 100px; } }
+    padding: auto; 
+    margin: auto;
+  }
+  .valores{
+    padding: auto;
+    margin: auto;
+  } }
+
+  
+  @media (min-width: 576px) { 
+    body {
+      background-color: #fff; }
+    img {
+      max-width: 100%; }
+    .conocenos {
+  
+      margin: auto;
+    }
+    #misionVision {
+      padding: auto; 
+      margin: auto;
+    }
+    .valores{
+      padding: auto;
+      margin: auto;
+
+  }}
+
+  @media (min-width: 768px) { 
+    body {
+      background-color: #fff; }
+    img {
+      max-width: 100%; }
+    .conocenos {
+  
+      margin: auto;
+    }
+    #misionVision {
+      padding: auto; 
+      margin: auto;
+    }
+    .valores{
+      padding: auto;
+      margin: auto;
+    }}
+  
+  @media (min-width: 992px) { body {
+    background-color: #fff; }
+  img {
+    max-width: 100%; }
+  .conocenos {
+
+    margin: auto;
+  }
+  #misionVision {
+    padding: auto; 
+    margin: auto;
+  }
+  .valores{
+    padding: auto;
+    margin: auto;
+  } }
+  
+  @media (min-width: 1200px) { body {
+    background-color: #fff; }
+  img {
+    max-width: 100%; }
+  .conocenos {
+
+    margin: auto;
+  }
+  #misionVision {
+    padding: auto; 
+    margin: auto;
+  }
+  .valores{
+    padding: auto;
+    margin: auto;
+  } }
 
 /*#grilla {
     display: grid;
