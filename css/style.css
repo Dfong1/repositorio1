@@ -97,6 +97,8 @@ ul {
 a {
   color: black; }
 
+  /*=====CONOCENOS====*/
+
 li.listaSeccion {
   display: flex;
   display: inline;
@@ -117,7 +119,8 @@ iframe {
 .tituloConocenos {
   display: flex;
   align-self: baseline;
-  justify-content: center; }
+  justify-content: stretch;
+}
 
 .parrafoConocenos {
   margin: auto;
@@ -129,81 +132,63 @@ iframe {
 
 .conocenos {
   display: flex;
-  display: grid;
-  grid-template-areas: 
-  nav div parrafoConocenos
-  "nav div tituloConocenos"
-  "nav aside videoIntroduccion";
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 250px;
   justify-content: center;
-  align-content: center;
-  margin: auto;
-  padding: 50px; }
+  padding: 25px;
+  flex-wrap: wrap;
+}
 
+/*====MISION Y VISION===*/
 
 img {
   max-width: 100%; }
 
 #misionVision {
-  display: grid;
-  grid-template-areas:
-  "nav div mision"
-  "nav div vision";
-  grid-template-rows: 100px 100px 100px;
-  grid-template-columns: 1fr 1px;
-  margin: auto;
-  padding: 50px; }
+  display: flex;
+  justify-content: center;
+  padding: 8.3px;
+}
 
   .misionVisionUno{
     display: flex;
     flex-direction: column;
-    padding: auto;
     margin: auto;
-
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
 .misionVision {
     display: flex;
     padding: auto;
-    justify-content: flex-start;
+    justify-content: center;
     margin: auto;
-  
+    justify-content: stretch;
 } 
 .mision {
   display: flex;
-  grid-area: inherit; }
+  grid-area: inherit;
+  margin: auto;
+  padding: auto;
+  justify-content: stretch;
+}
 
 .vision {
   display: flex;
   justify-content: center;
-  grid-area: inherit; }
+  margin: auto;
+  padding: auto;
+  justify-content: stretch;
+}
+
+/*====VALORES===*/
 
 .valores {
   display: flex;
-  display: grid;
-  grid-template-areas: 
-  nav div honestidad
-  "nav div respeto"
-  "nav div confianza"
-  "nav div responsabilidad"
-  "nav div lealtad"
-  "nav div superacion";
-  grid-template-rows: repeat(6 100px);
-  grid-template-columns: repeat(6 1px);
-  margin: auto;
-  padding: auto; }
-
-#misionVision {
-  display: grid;
-  grid-template-areas: 
-  "nav div mision"
-  "nav div vision";
-  grid-template-rows: 100px 100px 100px;
-  grid-template-columns: 1fr 1px;
-  padding: 50px; 
-  margin: 0px 20px;
+  flex-direction: column;
+  padding: 8.3px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
+/*====FOOTER===*/
 
 footer{
   background-color: #212F3D;
@@ -218,6 +203,8 @@ footer{
   list-style: none;
   color: white;
 }
+
+/*====SERVICIOS===*/
 
 #servicios {
   display: flex;
@@ -236,17 +223,32 @@ footer{
 }
 
 .textoCalculadora {
-  font-size: large; }
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: auto;
+  padding: auto;
+  border-bottom: 2px solid black;
+}
 
 .calculadora {
-  display: grid;
-  text-align: center;
-  padding: 50px;  
-  }
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px;
+  align-items: center;
+}
 
 .labels {
   display: flex;
-  justify-content: center; }
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  width: 20%;
+  align-self: center;
+}
+
 
 #servicios {
   display: flex;
@@ -362,7 +364,27 @@ footer{
   .valores{
     padding: auto;
     margin: auto;
-  } }
+  }
+  
+.calculadora {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px;
+  margin: 10px;
+}
+
+.labels {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 10px;
+}
+
+}
 
   
   @media (min-width: 576px) { 
@@ -382,7 +404,26 @@ footer{
       padding: auto;
       margin: auto;
 
-  }}
+  }
+    
+.calculadora {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px;
+  margin: 10px;
+}
+
+.labels {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 10px;
+}
+}
 
   @media (min-width: 768px) { 
     body {
@@ -400,7 +441,26 @@ footer{
     .valores{
       padding: auto;
       margin: auto;
-    }}
+    }
+    
+.calculadora {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px;
+  margin: 10px;
+}
+
+.labels {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 10px;
+}
+  }
   
   @media (min-width: 992px) { body {
     background-color: #fff; }
@@ -417,7 +477,26 @@ footer{
   .valores{
     padding: auto;
     margin: auto;
-  } }
+  }
+    
+.calculadora {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px;
+  margin: 10px;
+}
+
+.labels {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 10px;
+}
+}
   
   @media (min-width: 1200px) { body {
     background-color: #fff; }
@@ -434,7 +513,26 @@ footer{
   .valores{
     padding: auto;
     margin: auto;
-  } }
+  } 
+  
+  .calculadora {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+    margin: 10px;
+  }
+  
+  .labels {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px;
+  }
+}
 
 /*#grilla {
     display: grid;
@@ -487,7 +585,7 @@ aside {
   font-size: 18px;
 }
 
-.header{
+#header{
   width: 100%;
   position: fixed;
   height: 100vh;
