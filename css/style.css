@@ -148,14 +148,6 @@ img {
   padding: 8.3px;
 }
 
-  .misionVisionUno{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
 .misionVision {
     display: flex;
     padding: auto;
@@ -218,8 +210,14 @@ footer{
   grid-template-rows: repeat(5, 100px); 
 }
 
+.divServicios{
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
 .divServicios:hover {
-  background-color: #ABB5C2; 
+  background-color: #378FD9;
 }
 
 .textoCalculadora {
@@ -342,7 +340,8 @@ footer{
 
 #blog {
   display: grid;
-  grid-template-areas: "nav titulo nav"
+  grid-template-areas:
+  "nav titulo nav"
   "nav img nav"
   "nav parrafo nav";
   grid-template-columns: 1fr 1fr;
@@ -380,11 +379,12 @@ footer{
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: column;
-  width: 100%;
+  width: 20%;
   margin: 10px;
-}
+} 
 
 }
+
 
   
   @media (min-width: 576px) { 
