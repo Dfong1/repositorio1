@@ -145,7 +145,8 @@ img {
 #misionVision {
   display: flex;
   justify-content: center;
-  padding: 8.3px;
+  padding: 25px 120px;
+  flex-wrap: wrap;
 }
 
 .misionVision {
@@ -176,7 +177,7 @@ img {
 .valores {
   display: flex;
   flex-direction: column;
-  padding: 8.3px;
+  padding: 8.3px 120px;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -200,7 +201,8 @@ footer{
 
 #servicios {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column; 
+}
 
 .servicios {
   display: flex;
@@ -233,18 +235,15 @@ footer{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
-  padding: 50px;
+  padding: 50px 10px;
   align-items: center;
 }
 
 .labels {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: column;
-  width: 20%;
-  align-self: center;
+  width: 25px;
+  padding: 0px 10px;
 }
 
 
@@ -338,6 +337,8 @@ footer{
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 110px; }
 
+  /*====BLOG==*/
+
 #blog {
   display: grid;
   grid-template-areas:
@@ -345,7 +346,51 @@ footer{
   "nav img nav"
   "nav parrafo nav";
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: -150px; }
+  grid-template-rows: -150px;
+}
+
+.blog{
+  margin: 5px;
+  border: 2px solid #212F3D;
+  border-radius: 1rem;
+}
+
+.temaDelPeriodo{
+  margin: 5px;
+  border: 2px solid #212F3D;
+  border-radius: 1rem;
+}
+
+.temaActual{
+  margin: 5px;
+  border: 2px solid #212F3D;
+  border-radius: 1rem;
+}
+
+.fiscales{
+  margin: 5px;
+  border: 2px solid #212F3D;
+  border-radius: 1rem;
+}
+
+.temasMasBuscados{
+  margin: 5px;
+  border: 2px solid #212F3D;
+  border-radius: 1rem;
+}
+
+.laborales{
+  margin: 5px;
+  border: 2px solid #212F3D;
+  border-radius: 1rem;
+}
+
+.administrativos{
+  margin: 5px;
+  border: 2px solid #212F3D;
+  border-radius: 1rem;
+}
+
 
 @media (max-width: 1040px) and (min-width: 0px) {
   body {
@@ -353,25 +398,25 @@ footer{
   img {
     max-width: 100%; }
   .conocenos {
-
-    margin: auto;
+    margin: 8.3px 10px;
   }
   #misionVision {
-    padding: auto; 
-    margin: auto;
+    padding: 8.3px 10px;
   }
   .valores{
-    padding: auto;
-    margin: auto;
+    padding: 8.3px 10px;
   }
   
+  .tituloServicios{
+    padding: 0px 15px;
+  }
+
 .calculadora {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   padding: 50px;
-  margin: 10px;
 }
 
 .labels {
@@ -382,6 +427,11 @@ footer{
   width: 20%;
   margin: 10px;
 } 
+
+#blog{
+display: flex;
+flex-wrap: wrap;
+}
 
 }
 
