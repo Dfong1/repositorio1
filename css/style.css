@@ -331,7 +331,7 @@ footer{
 
 @media (max-width: 1040px) and (min-width: 0px) {
   body {
-    background-color: #F0FDFF; }
+    background-color: #fff; }
   img {
     max-width: 98%; }
   .conocenos {
