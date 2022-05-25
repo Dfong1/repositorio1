@@ -246,11 +246,6 @@ footer{
   padding: 0px 10px;
 }
 
-
-#servicios {
-  display: flex;
-  flex-direction: column; }
-
 .auditorias {
   display: flex;
   justify-content: center;
